@@ -9,23 +9,39 @@
 /* Begin PBXBuildFile section */
 		337635B728087DCA00B38D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337635B628087DCA00B38D62 /* AppDelegate.swift */; };
 		337635B928087DCA00B38D62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337635B828087DCA00B38D62 /* SceneDelegate.swift */; };
-		337635BB28087DCA00B38D62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337635BA28087DCA00B38D62 /* ViewController.swift */; };
 		337635BE28087DCA00B38D62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337635BC28087DCA00B38D62 /* Main.storyboard */; };
 		337635C128087DCA00B38D62 /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 337635BF28087DCA00B38D62 /* LittlePink.xcdatamodeld */; };
 		337635C328087DCD00B38D62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 337635C228087DCD00B38D62 /* Assets.xcassets */; };
 		337635C628087DCD00B38D62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337635C428087DCD00B38D62 /* LaunchScreen.storyboard */; };
+		338678D0280B24DD00D08725 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338678CF280B24DD00D08725 /* HomeVC.swift */; };
+		338678D2280B2ACB00D08725 /* FollowVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338678D1280B2ACB00D08725 /* FollowVC.swift */; };
+		338678D4280B2AD800D08725 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338678D3280B2AD800D08725 /* DiscoverVC.swift */; };
+		338678D6280B2AE200D08725 /* NearByVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338678D5280B2AE200D08725 /* NearByVC.swift */; };
+		338678D9280B2B4C00D08725 /* CommonConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338678D8280B2B4C00D08725 /* CommonConstant.swift */; };
+		338678DB280C2AC300D08725 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338678DA280C2AC300D08725 /* WaterfallVC.swift */; };
+		338678DD280C2CA300D08725 /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338678DC280C2CA300D08725 /* WaterfallCell.swift */; };
+		5E056063108F22E51AB13B07 /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A763568EE0B3DB771B98842D /* Pods_LittlePink.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		337635B328087DCA00B38D62 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337635B628087DCA00B38D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		337635B828087DCA00B38D62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		337635BA28087DCA00B38D62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		337635BD28087DCA00B38D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		337635C028087DCA00B38D62 /* LittlePink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePink.xcdatamodel; sourceTree = "<group>"; };
 		337635C228087DCD00B38D62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		337635C528087DCD00B38D62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		337635C728087DCD00B38D62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		338678CF280B24DD00D08725 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
+		338678D1280B2ACB00D08725 /* FollowVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowVC.swift; sourceTree = "<group>"; };
+		338678D3280B2AD800D08725 /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		338678D5280B2AE200D08725 /* NearByVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NearByVC.swift; sourceTree = "<group>"; };
+		338678D8280B2B4C00D08725 /* CommonConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstant.swift; sourceTree = "<group>"; };
+		338678DA280C2AC300D08725 /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
+		338678DC280C2CA300D08725 /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
+		4FF0C786644B8109CB536557 /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
+		A763568EE0B3DB771B98842D /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7066D2347D8BA14237A23B3 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E056063108F22E51AB13B07 /* Pods_LittlePink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +61,8 @@
 			children = (
 				337635B528087DCA00B38D62 /* LittlePink */,
 				337635B428087DCA00B38D62 /* Products */,
+				483DACF1B6CA747B0F3A565B /* Pods */,
+				F224B63E993717FBC9118325 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,7 +79,10 @@
 			children = (
 				337635B628087DCA00B38D62 /* AppDelegate.swift */,
 				337635B828087DCA00B38D62 /* SceneDelegate.swift */,
-				337635BA28087DCA00B38D62 /* ViewController.swift */,
+				338678D8280B2B4C00D08725 /* CommonConstant.swift */,
+				338678DA280C2AC300D08725 /* WaterfallVC.swift */,
+				338678DC280C2CA300D08725 /* WaterfallCell.swift */,
+				338678D7280B2AE700D08725 /* Home */,
 				337635BC28087DCA00B38D62 /* Main.storyboard */,
 				337635C228087DCD00B38D62 /* Assets.xcassets */,
 				337635C428087DCD00B38D62 /* LaunchScreen.storyboard */,
@@ -70,6 +92,34 @@
 			path = LittlePink;
 			sourceTree = "<group>";
 		};
+		338678D7280B2AE700D08725 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				338678CF280B24DD00D08725 /* HomeVC.swift */,
+				338678D3280B2AD800D08725 /* DiscoverVC.swift */,
+				338678D1280B2ACB00D08725 /* FollowVC.swift */,
+				338678D5280B2AE200D08725 /* NearByVC.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		483DACF1B6CA747B0F3A565B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FF0C786644B8109CB536557 /* Pods-LittlePink.debug.xcconfig */,
+				F7066D2347D8BA14237A23B3 /* Pods-LittlePink.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F224B63E993717FBC9118325 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A763568EE0B3DB771B98842D /* Pods_LittlePink.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +127,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 337635CA28087DCD00B38D62 /* Build configuration list for PBXNativeTarget "LittlePink" */;
 			buildPhases = (
+				64DCAEE51F9B32E97FB81294 /* [CP] Check Pods Manifest.lock */,
 				337635AF28087DCA00B38D62 /* Sources */,
 				337635B028087DCA00B38D62 /* Frameworks */,
 				337635B128087DCA00B38D62 /* Resources */,
+				A8EEC829EA6D69DAD84DE9ED /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +188,63 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		64DCAEE51F9B32E97FB81294 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LittlePink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A8EEC829EA6D69DAD84DE9ED /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		337635AF28087DCA00B38D62 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				337635BB28087DCA00B38D62 /* ViewController.swift in Sources */,
+				338678D9280B2B4C00D08725 /* CommonConstant.swift in Sources */,
+				338678DB280C2AC300D08725 /* WaterfallVC.swift in Sources */,
+				338678DD280C2CA300D08725 /* WaterfallCell.swift in Sources */,
+				338678D6280B2AE200D08725 /* NearByVC.swift in Sources */,
+				338678D0280B24DD00D08725 /* HomeVC.swift in Sources */,
 				337635B728087DCA00B38D62 /* AppDelegate.swift in Sources */,
+				338678D2280B2ACB00D08725 /* FollowVC.swift in Sources */,
 				337635B928087DCA00B38D62 /* SceneDelegate.swift in Sources */,
 				337635C128087DCA00B38D62 /* LittlePink.xcdatamodeld in Sources */,
+				338678D4280B2AD800D08725 /* DiscoverVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +386,7 @@
 		};
 		337635CB28087DCD00B38D62 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FF0C786644B8109CB536557 /* Pods-LittlePink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -314,6 +415,7 @@
 		};
 		337635CC28087DCD00B38D62 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F7066D2347D8BA14237A23B3 /* Pods-LittlePink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
