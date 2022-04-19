@@ -18,7 +18,7 @@ class FollowVC: UIViewController, IndicatorInfoProvider {
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        IndicatorInfo(title: "追蹤")
+        IndicatorInfo(title: NSLocalizedString("Follow", comment: "追蹤"))
     }
 
 }

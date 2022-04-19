@@ -30,7 +30,7 @@ class DiscoverVC: ButtonBarPagerTabStripViewController, IndicatorInfoProvider {
     }
     
     func indicatorInfo(for pagerTabStripController: PagerTabStripViewController) -> IndicatorInfo {
-        IndicatorInfo(title: "發現")
+        IndicatorInfo(title: NSLocalizedString("Discovery", comment: "發現"))
     }
     
     override func viewControllers(for pagerTabStripController: PagerTabStripViewController) -> [UIViewController] {

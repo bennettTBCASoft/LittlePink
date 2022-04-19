@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		3301539B280F0B1A00C6B3E8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3301539A280F0B1900C6B3E8 /* Extension.swift */; };
+		330153A4280F19E700C6B3E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 330153A6280F19E700C6B3E8 /* Localizable.strings */; };
+		330153A9280F1B4B00C6B3E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 330153AB280F1B4B00C6B3E8 /* InfoPlist.strings */; };
 		3338506B280DC64E008C3450 /* TabbarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338506A280DC64E008C3450 /* TabbarC.swift */; };
 		3338506D280DC65E008C3450 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338506C280DC65E008C3450 /* PostVC.swift */; };
 		337635B728087DCA00B38D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337635B628087DCA00B38D62 /* AppDelegate.swift */; };
@@ -28,6 +30,12 @@
 
 /* Begin PBXFileReference section */
 		3301539A280F0B1900C6B3E8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3301539E280F16C500C6B3E8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Main.strings"; sourceTree = "<group>"; };
+		3301539F280F16C500C6B3E8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		330153A3280F193B00C6B3E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		330153A5280F19E700C6B3E8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		330153AA280F1B4B00C6B3E8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		330153AC280F1B8800C6B3E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3338506A280DC64E008C3450 /* TabbarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarC.swift; sourceTree = "<group>"; };
 		3338506C280DC65E008C3450 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		337635B328087DCA00B38D62 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				3338506C280DC65E008C3450 /* PostVC.swift */,
+				330153A6280F19E700C6B3E8 /* Localizable.strings */,
+				330153AB280F1B4B00C6B3E8 /* InfoPlist.strings */,
 			);
 			path = "Demo+PH";
 			sourceTree = "<group>";
@@ -197,6 +207,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hant",
 			);
 			mainGroup = 337635AA28087DCA00B38D62;
 			productRefGroup = 337635B428087DCA00B38D62 /* Products */;
@@ -214,8 +225,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				337635C628087DCD00B38D62 /* LaunchScreen.storyboard in Resources */,
+				330153A4280F19E700C6B3E8 /* Localizable.strings in Resources */,
 				337635C328087DCD00B38D62 /* Assets.xcassets in Resources */,
 				337635BE28087DCA00B38D62 /* Main.storyboard in Resources */,
+				330153A9280F1B4B00C6B3E8 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,10 +300,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		330153A6280F19E700C6B3E8 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				330153A5280F19E700C6B3E8 /* zh-Hant */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		330153AB280F1B4B00C6B3E8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				330153AA280F1B4B00C6B3E8 /* zh-Hant */,
+				330153AC280F1B8800C6B3E8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		337635BC28087DCA00B38D62 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				337635BD28087DCA00B38D62 /* Base */,
+				3301539E280F16C500C6B3E8 /* zh-Hant */,
+				330153A3280F193B00C6B3E8 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -299,6 +331,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				337635C528087DCD00B38D62 /* Base */,
+				3301539F280F16C500C6B3E8 /* zh-Hant */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -310,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -370,6 +404,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
