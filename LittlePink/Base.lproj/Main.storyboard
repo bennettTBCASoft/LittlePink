@@ -208,7 +208,7 @@
         <!--發布-->
         <scene sceneID="8KD-Vs-CLs">
             <objects>
-                <viewController id="N9H-pL-lHo" sceneMemberID="viewController">
+                <viewController id="N9H-pL-lHo" customClass="PostVC" customModule="LittlePink" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3Id-vr-Mcf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -269,10 +269,10 @@
             </objects>
             <point key="canvasLocation" x="257" y="2101"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--TabbarC-->
         <scene sceneID="LWK-Rg-Bkk">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lyE-hv-F5j" sceneMemberID="viewController">
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="lyE-hv-F5j" customClass="TabbarC" customModule="LittlePink" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ieh-W5-ENy">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>

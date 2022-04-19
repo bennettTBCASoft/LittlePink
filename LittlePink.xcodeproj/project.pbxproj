@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3338506B280DC64E008C3450 /* TabbarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338506A280DC64E008C3450 /* TabbarC.swift */; };
+		3338506D280DC65E008C3450 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338506C280DC65E008C3450 /* PostVC.swift */; };
 		337635B728087DCA00B38D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337635B628087DCA00B38D62 /* AppDelegate.swift */; };
 		337635B928087DCA00B38D62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337635B828087DCA00B38D62 /* SceneDelegate.swift */; };
 		337635BE28087DCA00B38D62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337635BC28087DCA00B38D62 /* Main.storyboard */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3338506A280DC64E008C3450 /* TabbarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarC.swift; sourceTree = "<group>"; };
+		3338506C280DC65E008C3450 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		337635B328087DCA00B38D62 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337635B628087DCA00B38D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		337635B828087DCA00B38D62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				338678DC280C2CA300D08725 /* WaterfallCell.swift */,
 				338678D7280B2AE700D08725 /* Home */,
 				337635BC28087DCA00B38D62 /* Main.storyboard */,
+				3338506A280DC64E008C3450 /* TabbarC.swift */,
+				3338506C280DC65E008C3450 /* PostVC.swift */,
 				337635C228087DCD00B38D62 /* Assets.xcassets */,
 				337635C428087DCD00B38D62 /* LaunchScreen.storyboard */,
 				337635C728087DCD00B38D62 /* Info.plist */,
@@ -241,9 +247,11 @@
 				338678D6280B2AE200D08725 /* NearByVC.swift in Sources */,
 				338678D0280B24DD00D08725 /* HomeVC.swift in Sources */,
 				337635B728087DCA00B38D62 /* AppDelegate.swift in Sources */,
+				3338506D280DC65E008C3450 /* PostVC.swift in Sources */,
 				338678D2280B2ACB00D08725 /* FollowVC.swift in Sources */,
 				337635B928087DCA00B38D62 /* SceneDelegate.swift in Sources */,
 				337635C128087DCA00B38D62 /* LittlePink.xcdatamodeld in Sources */,
+				3338506B280DC64E008C3450 /* TabbarC.swift in Sources */,
 				338678D4280B2AD800D08725 /* DiscoverVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
