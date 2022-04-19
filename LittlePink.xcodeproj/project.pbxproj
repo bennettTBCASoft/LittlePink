@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3301539B280F0B1A00C6B3E8 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3301539A280F0B1900C6B3E8 /* Extension.swift */; };
 		3338506B280DC64E008C3450 /* TabbarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338506A280DC64E008C3450 /* TabbarC.swift */; };
 		3338506D280DC65E008C3450 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338506C280DC65E008C3450 /* PostVC.swift */; };
 		337635B728087DCA00B38D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337635B628087DCA00B38D62 /* AppDelegate.swift */; };
@@ -26,6 +27,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3301539A280F0B1900C6B3E8 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		3338506A280DC64E008C3450 /* TabbarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarC.swift; sourceTree = "<group>"; };
 		3338506C280DC65E008C3450 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		337635B328087DCA00B38D62 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -60,6 +62,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33015399280F0AFB00C6B3E8 /* Comman */ = {
+			isa = PBXGroup;
+			children = (
+				338678D8280B2B4C00D08725 /* CommonConstant.swift */,
+				3301539A280F0B1900C6B3E8 /* Extension.swift */,
+			);
+			path = Comman;
+			sourceTree = "<group>";
+		};
+		3301539C280F160700C6B3E8 /* Waterfall */ = {
+			isa = PBXGroup;
+			children = (
+				338678DA280C2AC300D08725 /* WaterfallVC.swift */,
+				338678DC280C2CA300D08725 /* WaterfallCell.swift */,
+			);
+			path = Waterfall;
+			sourceTree = "<group>";
+		};
+		3301539D280F162500C6B3E8 /* Demo+PH */ = {
+			isa = PBXGroup;
+			children = (
+				3338506C280DC65E008C3450 /* PostVC.swift */,
+			);
+			path = "Demo+PH";
+			sourceTree = "<group>";
+		};
 		337635AA28087DCA00B38D62 = {
 			isa = PBXGroup;
 			children = (
@@ -83,15 +111,14 @@
 			children = (
 				337635B628087DCA00B38D62 /* AppDelegate.swift */,
 				337635B828087DCA00B38D62 /* SceneDelegate.swift */,
-				338678D8280B2B4C00D08725 /* CommonConstant.swift */,
-				338678DA280C2AC300D08725 /* WaterfallVC.swift */,
-				338678DC280C2CA300D08725 /* WaterfallCell.swift */,
-				338678D7280B2AE700D08725 /* Home */,
-				337635BC28087DCA00B38D62 /* Main.storyboard */,
+				33015399280F0AFB00C6B3E8 /* Comman */,
 				3338506A280DC64E008C3450 /* TabbarC.swift */,
-				3338506C280DC65E008C3450 /* PostVC.swift */,
+				337635BC28087DCA00B38D62 /* Main.storyboard */,
+				338678D7280B2AE700D08725 /* Home */,
+				3301539C280F160700C6B3E8 /* Waterfall */,
 				337635C228087DCD00B38D62 /* Assets.xcassets */,
 				337635C428087DCD00B38D62 /* LaunchScreen.storyboard */,
+				3301539D280F162500C6B3E8 /* Demo+PH */,
 				337635C728087DCD00B38D62 /* Info.plist */,
 				337635BF28087DCA00B38D62 /* LittlePink.xcdatamodeld */,
 			);
@@ -250,6 +277,7 @@
 				3338506D280DC65E008C3450 /* PostVC.swift in Sources */,
 				338678D2280B2ACB00D08725 /* FollowVC.swift in Sources */,
 				337635B928087DCA00B38D62 /* SceneDelegate.swift in Sources */,
+				3301539B280F0B1A00C6B3E8 /* Extension.swift in Sources */,
 				337635C128087DCA00B38D62 /* LittlePink.xcdatamodeld in Sources */,
 				3338506B280DC64E008C3450 /* TabbarC.swift in Sources */,
 				338678D4280B2AD800D08725 /* DiscoverVC.swift in Sources */,
