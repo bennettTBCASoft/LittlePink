@@ -7,10 +7,12 @@
 
 import UIKit
 import YPImagePicker
+import SKPhotoBrowser
+
 
 class NoteEditVC: UIViewController {
     var photos = [
-        UIImage(named: "1"), UIImage(named: "2"), UIImage(named: "3")
+        UIImage(named: "1")!, UIImage(named: "2")!, UIImage(named: "3")!
     ]
     
     var photoCounts: Int {
@@ -86,5 +88,24 @@ extension NoteEditVC: UICollectionViewDataSource {
 }
 
 extension NoteEditVC: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        var images = [SKPhoto]()
+        for photo in photos {
+            images.append(SKPhoto.photoWithImage(photo))
+        }
+        // 2. create PhotoBrowser Instance, and present from your viewController.
+        let browser = SKPhotoBrowser(photos: images, initialPageIndex: indexPath.item)
+        SKPhotoBrowserOptions.displayDeleteButton = true
+        browser.delegate = self
+        present(browser, animated: true)
+    }
+}
+
+extension NoteEditVC: SKPhotoBrowserDelegate {
+    func removePhoto(_ browser: SKPhotoBrowser, index: Int, reload: @escaping (() -> Void)) {
+        
+        photos.remove(at: index)
+        self.photoCollectionView.reloadData()
+        reload()
+    }
 }
