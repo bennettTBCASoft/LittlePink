@@ -12,6 +12,9 @@
 		330153A9280F1B4B00C6B3E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 330153AB280F1B4B00C6B3E8 /* InfoPlist.strings */; };
 		3338506B280DC64E008C3450 /* TabbarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338506A280DC64E008C3450 /* TabbarC.swift */; };
 		3338506D280DC65E008C3450 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338506C280DC65E008C3450 /* PostVC.swift */; };
+		333C8F4E28145E5300B9E3E8 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C8F4D28145E5300B9E3E8 /* NoteEditVC.swift */; };
+		333C8F5028146E0F00B9E3E8 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C8F4F28146E0F00B9E3E8 /* PhotoCell.swift */; };
+		333C8F542815136100B9E3E8 /* PhotoFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C8F532815136100B9E3E8 /* PhotoFooter.swift */; };
 		337635B728087DCA00B38D62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337635B628087DCA00B38D62 /* AppDelegate.swift */; };
 		337635B928087DCA00B38D62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 337635B828087DCA00B38D62 /* SceneDelegate.swift */; };
 		337635BE28087DCA00B38D62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 337635BC28087DCA00B38D62 /* Main.storyboard */; };
@@ -38,6 +41,9 @@
 		330153AC280F1B8800C6B3E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3338506A280DC64E008C3450 /* TabbarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarC.swift; sourceTree = "<group>"; };
 		3338506C280DC65E008C3450 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		333C8F4D28145E5300B9E3E8 /* NoteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
+		333C8F4F28146E0F00B9E3E8 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PhotoCell.swift; path = /Users/junyi/Desktop/LittlePink/LittlePink/Home/PhotoCell.swift; sourceTree = "<absolute>"; };
+		333C8F532815136100B9E3E8 /* PhotoFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoFooter.swift; sourceTree = "<group>"; };
 		337635B328087DCA00B38D62 /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		337635B628087DCA00B38D62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		337635B828087DCA00B38D62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -122,7 +128,6 @@
 				337635B628087DCA00B38D62 /* AppDelegate.swift */,
 				337635B828087DCA00B38D62 /* SceneDelegate.swift */,
 				33015399280F0AFB00C6B3E8 /* Comman */,
-				3338506A280DC64E008C3450 /* TabbarC.swift */,
 				337635BC28087DCA00B38D62 /* Main.storyboard */,
 				338678D7280B2AE700D08725 /* Home */,
 				3301539C280F160700C6B3E8 /* Waterfall */,
@@ -138,10 +143,14 @@
 		338678D7280B2AE700D08725 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				3338506A280DC64E008C3450 /* TabbarC.swift */,
 				338678CF280B24DD00D08725 /* HomeVC.swift */,
 				338678D3280B2AD800D08725 /* DiscoverVC.swift */,
 				338678D1280B2ACB00D08725 /* FollowVC.swift */,
 				338678D5280B2AE200D08725 /* NearByVC.swift */,
+				333C8F4D28145E5300B9E3E8 /* NoteEditVC.swift */,
+				333C8F4F28146E0F00B9E3E8 /* PhotoCell.swift */,
+				333C8F532815136100B9E3E8 /* PhotoFooter.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -282,9 +291,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				338678D9280B2B4C00D08725 /* CommonConstant.swift in Sources */,
+				333C8F5028146E0F00B9E3E8 /* PhotoCell.swift in Sources */,
 				338678DB280C2AC300D08725 /* WaterfallVC.swift in Sources */,
 				338678DD280C2CA300D08725 /* WaterfallCell.swift in Sources */,
 				338678D6280B2AE200D08725 /* NearByVC.swift in Sources */,
+				333C8F542815136100B9E3E8 /* PhotoFooter.swift in Sources */,
+				333C8F4E28145E5300B9E3E8 /* NoteEditVC.swift in Sources */,
 				338678D0280B24DD00D08725 /* HomeVC.swift in Sources */,
 				337635B728087DCA00B38D62 /* AppDelegate.swift in Sources */,
 				3338506D280DC65E008C3450 /* PostVC.swift in Sources */,

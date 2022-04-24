@@ -36,22 +36,16 @@ class TabbarC: UITabBarController, UITabBarControllerDelegate {
             config.startOnScreen = .library
             config.screens = [.library, .video, .photo]
             config.showsCrop = .none
-            config.maxCameraZoomFactor = 5
+            config.maxCameraZoomFactor = kMaxCameraZoomFactor
             config.library.preSelectItemOnMultipleSelection = true
             
             // MARK: 相冊配置
             config.library.mediaType = .photoAndVideo
             config.library.defaultMultipleSelection = true
-            config.library.maxNumberOfItems = 10
-            config.library.minNumberOfItems = 1
+            config.library.maxNumberOfItems = kMaxPhotoCount
+            config.library.spacingBetweenItems = kSpacingBetweenItem
             
-            // MARK: 影片配置
-            config.video.recordingTimeLimit = 60.0
-            config.video.libraryTimeLimit = 60.0
-            config.video.minimumTimeLimit = 3.0
-            config.video.trimmerMaxDuration = 60.0
-            config.video.trimmerMinDuration = 3.0
-            
+            // MARK: 影片配置 參照文檔，此處全部默認
             
             
             let picker = YPImagePicker(configuration: config)

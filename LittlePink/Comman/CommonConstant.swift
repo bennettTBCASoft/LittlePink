@@ -13,11 +13,20 @@ let kFollowVCID = "FollowVCID"
 let kDiscoverVCID = "DiscoverVCID"
 let kNearByVCID = "NearByVCID"
 let kWaterfallVCID = "WaterfallVCID"
+let kNoteEditVCID = "NoteEditVCID"
 
-// MARK: - CellID
+// MARK: - Cell相關ID
 let waterfallId = "WaterFallID"
+let photoCellId = "PhotoCellID"
+let photoFooterId = "PhotoFooterID"
 
-// MARK:  - WaterfallPadding
+// MARK: 業務邏輯相關
+// 瀑布流
 let kWaterfallPadding:CGFloat = 4
 
 let kChannels = ["推薦", "旅行", "娛樂", "才藝", "美妝", "白富美", "美食", "萌寵"]
+
+// YPImagePicker
+let kMaxCameraZoomFactor: CGFloat = 5
+let kMaxPhotoCount = 9
+let kSpacingBetweenItem: CGFloat = 2
