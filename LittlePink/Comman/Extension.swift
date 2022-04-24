@@ -20,6 +20,23 @@ extension UIView {
     }
 }
 
+extension UIViewController {
+    
+    // MARK:  - 顯示加載框或提示框
+    
+    // MARK:  加載框--手動隱藏
+    
+    // MARK:  提示框--自動隱藏
+    func showTextHUD(_ title: String, subTitle:String? = nil){
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud.mode = .text
+        hud.label.text = title
+        hud.detailsLabel.text = subTitle
+        hud.hide(animated: true, afterDelay: 2)
+    }
+    
+}
+
 extension Bundle{
     var appName: String{
         if let appName = localizedInfoDictionary?["CFBundleDisplayName"] as? String {

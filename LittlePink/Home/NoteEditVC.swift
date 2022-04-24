@@ -54,7 +54,7 @@ extension NoteEditVC: UICollectionViewDataSource {
     }
     
     @objc private func clickPhotoCellButton(_ sender: UIButton){
-        if photoCounts < 9 {
+        if photoCounts < kMaxPhotoCount {
             var config = YPImagePickerConfiguration()
             
             // MARK: 通用配置
@@ -79,7 +79,7 @@ extension NoteEditVC: UICollectionViewDataSource {
             }
             present(picker, animated: true, completion: nil)
         } else {
-            
+            self.showTextHUD("最多選擇\(kMaxPhotoCount)張照片哦")
         }
     }
     

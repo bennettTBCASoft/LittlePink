@@ -39,6 +39,7 @@
 		330153A5280F19E700C6B3E8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		330153AA280F1B4B00C6B3E8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		330153AC280F1B8800C6B3E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		33376936281563DA00349248 /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
 		3338506A280DC64E008C3450 /* TabbarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarC.swift; sourceTree = "<group>"; };
 		3338506C280DC65E008C3450 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
 		333C8F4D28145E5300B9E3E8 /* NoteEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditVC.swift; sourceTree = "<group>"; };
@@ -134,6 +135,7 @@
 				337635C228087DCD00B38D62 /* Assets.xcassets */,
 				337635C428087DCD00B38D62 /* LaunchScreen.storyboard */,
 				3301539D280F162500C6B3E8 /* Demo+PH */,
+				33376936281563DA00349248 /* LittlePink-Bridging-Header.h */,
 				337635C728087DCD00B38D62 /* Info.plist */,
 				337635BF28087DCA00B38D62 /* LittlePink.xcdatamodeld */,
 			);
@@ -491,6 +493,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bennett.LittlePink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/junyi/Desktop/LittlePink/LittlePink/LittlePink-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -520,6 +523,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Bennett.LittlePink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/junyi/Desktop/LittlePink/LittlePink/LittlePink-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
