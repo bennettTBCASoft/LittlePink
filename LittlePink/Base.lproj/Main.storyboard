@@ -331,6 +331,8 @@
                                                 <connections>
                                                     <outlet property="dataSource" destination="te4-Lw-X2J" id="2ql-R4-ST1"/>
                                                     <outlet property="delegate" destination="te4-Lw-X2J" id="gUe-tU-A1F"/>
+                                                    <outlet property="dragDelegate" destination="te4-Lw-X2J" id="5CH-C7-Tdu"/>
+                                                    <outlet property="dropDelegate" destination="te4-Lw-X2J" id="lyG-wg-2cw"/>
                                                 </connections>
                                             </collectionView>
                                         </subviews>
