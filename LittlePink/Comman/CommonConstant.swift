@@ -30,3 +30,6 @@ let kChannels = ["推薦", "旅行", "娛樂", "才藝", "美妝", "白富美", 
 let kMaxCameraZoomFactor: CGFloat = 5
 let kMaxPhotoCount = 9
 let kSpacingBetweenItem: CGFloat = 2
+
+// NoteEdit Title 字數限制
+let kMaxNoteTitleCount = 20

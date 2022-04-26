@@ -11,6 +11,7 @@
 		330153A4280F19E700C6B3E8 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 330153A6280F19E700C6B3E8 /* Localizable.strings */; };
 		330153A9280F1B4B00C6B3E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 330153AB280F1B4B00C6B3E8 /* InfoPlist.strings */; };
 		331873582816F83A00292D5B /* NoteEdit-DragDrop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331873572816F83A00292D5B /* NoteEdit-DragDrop.swift */; };
+		3326B64E2818184100485ED0 /* NoteEdit-CollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3326B64D2818184100485ED0 /* NoteEdit-CollectionView.swift */; };
 		3338506B280DC64E008C3450 /* TabbarC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338506A280DC64E008C3450 /* TabbarC.swift */; };
 		3338506D280DC65E008C3450 /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3338506C280DC65E008C3450 /* PostVC.swift */; };
 		333C8F4E28145E5300B9E3E8 /* NoteEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 333C8F4D28145E5300B9E3E8 /* NoteEditVC.swift */; };
@@ -42,6 +43,7 @@
 		330153AA280F1B4B00C6B3E8 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		330153AC280F1B8800C6B3E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		331873572816F83A00292D5B /* NoteEdit-DragDrop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEdit-DragDrop.swift"; sourceTree = "<group>"; };
+		3326B64D2818184100485ED0 /* NoteEdit-CollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEdit-CollectionView.swift"; sourceTree = "<group>"; };
 		33376936281563DA00349248 /* LittlePink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LittlePink-Bridging-Header.h"; sourceTree = "<group>"; };
 		3338506A280DC64E008C3450 /* TabbarC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarC.swift; sourceTree = "<group>"; };
 		3338506C280DC65E008C3450 /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 			children = (
 				333C8F4D28145E5300B9E3E8 /* NoteEditVC.swift */,
 				331873572816F83A00292D5B /* NoteEdit-DragDrop.swift */,
+				3326B64D2818184100485ED0 /* NoteEdit-CollectionView.swift */,
 				333C8F4F28146E0F00B9E3E8 /* PhotoCell.swift */,
 				333C8F532815136100B9E3E8 /* PhotoFooter.swift */,
 			);
@@ -323,6 +326,7 @@
 				3301539B280F0B1A00C6B3E8 /* Extension.swift in Sources */,
 				337635C128087DCA00B38D62 /* LittlePink.xcdatamodeld in Sources */,
 				3338506B280DC64E008C3450 /* TabbarC.swift in Sources */,
+				3326B64E2818184100485ED0 /* NoteEdit-CollectionView.swift in Sources */,
 				338678D4280B2AD800D08725 /* DiscoverVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

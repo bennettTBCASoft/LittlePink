@@ -8,6 +8,10 @@
 import Foundation
 import UIKit
 
+extension UITextField {
+    var unwrappedText: String { text ?? "" }
+}
+
 extension UIView {
     @IBInspectable
     var corner: CGFloat {
