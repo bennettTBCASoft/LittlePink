@@ -11,6 +11,7 @@ target 'LittlePink' do
   pod 'YPImagePicker'
   pod 'MBProgressHUD', '~> 1.2.0'
   pod 'SKPhotoBrowser'
+  pod 'KMPlaceholderTextView'
   
 end
   

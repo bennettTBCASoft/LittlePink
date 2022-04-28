@@ -33,3 +33,4 @@ let kSpacingBetweenItem: CGFloat = 2
 
 // NoteEdit Title 字數限制
 let kMaxNoteTitleCount = 20
+let kMaxNoteTextCount = 1000
