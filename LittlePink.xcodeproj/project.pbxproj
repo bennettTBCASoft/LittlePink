@@ -31,6 +31,9 @@
 		338678D9280B2B4C00D08725 /* CommonConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338678D8280B2B4C00D08725 /* CommonConstant.swift */; };
 		338678DB280C2AC300D08725 /* WaterfallVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338678DA280C2AC300D08725 /* WaterfallVC.swift */; };
 		338678DD280C2CA300D08725 /* WaterfallCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 338678DC280C2CA300D08725 /* WaterfallCell.swift */; };
+		33D23E68281AE180004B97D6 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D23E67281AE180004B97D6 /* ChannelVC.swift */; };
+		33D23E6A281AE211004B97D6 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D23E69281AE211004B97D6 /* ChannelTableVC.swift */; };
+		33D23E6C281AF02D004B97D6 /* Protocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D23E6B281AF02D004B97D6 /* Protocal.swift */; };
 		33E9E73B28196FA600C257EE /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E9E73A28196FA600C257EE /* NoteEditVC-Config.swift */; };
 		33E9E73D2819792400C257EE /* TextViewIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E9E73C2819792400C257EE /* TextViewIAView.swift */; };
 		33E9E73F2819793000C257EE /* TextViewIAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E9E73E2819793000C257EE /* TextViewIAView.xib */; };
@@ -69,6 +72,9 @@
 		338678D8280B2B4C00D08725 /* CommonConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonConstant.swift; sourceTree = "<group>"; };
 		338678DA280C2AC300D08725 /* WaterfallVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallVC.swift; sourceTree = "<group>"; };
 		338678DC280C2CA300D08725 /* WaterfallCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterfallCell.swift; sourceTree = "<group>"; };
+		33D23E67281AE180004B97D6 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
+		33D23E69281AE211004B97D6 /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
+		33D23E6B281AF02D004B97D6 /* Protocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocal.swift; sourceTree = "<group>"; };
 		33E9E73A28196FA600C257EE /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
 		33E9E73C2819792400C257EE /* TextViewIAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewIAView.swift; sourceTree = "<group>"; };
 		33E9E73E2819793000C257EE /* TextViewIAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewIAView.xib; sourceTree = "<group>"; };
@@ -94,6 +100,7 @@
 			children = (
 				338678D8280B2B4C00D08725 /* CommonConstant.swift */,
 				3301539A280F0B1900C6B3E8 /* Extension.swift */,
+				33D23E6B281AF02D004B97D6 /* Protocal.swift */,
 			);
 			path = Comman;
 			sourceTree = "<group>";
@@ -128,6 +135,8 @@
 				333C8F532815136100B9E3E8 /* PhotoFooter.swift */,
 				33E9E73C2819792400C257EE /* TextViewIAView.swift */,
 				33E9E73E2819793000C257EE /* TextViewIAView.xib */,
+				33D23E67281AE180004B97D6 /* ChannelVC.swift */,
+				33D23E69281AE211004B97D6 /* ChannelTableVC.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -329,15 +338,18 @@
 				333C8F542815136100B9E3E8 /* PhotoFooter.swift in Sources */,
 				333C8F4E28145E5300B9E3E8 /* NoteEditVC.swift in Sources */,
 				338678D0280B24DD00D08725 /* HomeVC.swift in Sources */,
+				33D23E6C281AF02D004B97D6 /* Protocal.swift in Sources */,
 				337635B728087DCA00B38D62 /* AppDelegate.swift in Sources */,
 				3338506D280DC65E008C3450 /* PostVC.swift in Sources */,
 				331873582816F83A00292D5B /* NoteEdit-DragDrop.swift in Sources */,
 				338678D2280B2ACB00D08725 /* FollowVC.swift in Sources */,
+				33D23E68281AE180004B97D6 /* ChannelVC.swift in Sources */,
 				33E9E73B28196FA600C257EE /* NoteEditVC-Config.swift in Sources */,
 				337635B928087DCA00B38D62 /* SceneDelegate.swift in Sources */,
 				3301539B280F0B1A00C6B3E8 /* Extension.swift in Sources */,
 				337635C128087DCA00B38D62 /* LittlePink.xcdatamodeld in Sources */,
 				3338506B280DC64E008C3450 /* TabbarC.swift in Sources */,
+				33D23E6A281AE211004B97D6 /* ChannelTableVC.swift in Sources */,
 				3326B64E2818184100485ED0 /* NoteEdit-CollectionView.swift in Sources */,
 				338678D4280B2AD800D08725 /* DiscoverVC.swift in Sources */,
 			);

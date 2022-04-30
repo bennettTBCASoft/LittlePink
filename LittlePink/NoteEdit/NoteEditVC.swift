@@ -12,7 +12,6 @@ import UIKit
 
 class NoteEditVC: UIViewController {
     
-    
     var photos = [
         UIImage(named: "1")!, UIImage(named: "2")!, UIImage(named: "3")!
     ]
@@ -30,6 +29,15 @@ class NoteEditVC: UIViewController {
     @IBOutlet weak var titleTextField: UITextField!
     @IBOutlet weak var titleCountLabel: UILabel!
     @IBOutlet weak var textView: UITextView!
+    
+    // MARK: Chennel 相關
+    // 從ChannelTableVC傳回來的值
+    var channel = ""
+    var subChannel = ""
+    
+    @IBOutlet weak var chennelIcon: UIImageView!
+    @IBOutlet weak var joinChennlLabel: UILabel!
+    @IBOutlet weak var selectChannelLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,6 +75,27 @@ class NoteEditVC: UIViewController {
     
     // 待做（存草稿和發佈筆記之前須判斷當前用戶輸入的正文文本數量，看是否大於最大可輸入數量）
     
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // channelVC 不是 NoteEditVC下面的屬性，所以沒有強引用，不需要將PVDelegate標記為weak
+        if let channelVC = segue.destination as? ChannelVC {
+            channelVC.PVDelegate = self
+        }
+    }
+    
+}
+
+extension NoteEditVC: ChannelVCDelegate {
+    func updateChannel(channel: String, subChannel: String) {
+        self.channel = channel
+        self.subChannel = subChannel
+        
+        self.chennelIcon.tintColor = UIColor(named: "blue")
+        self.joinChennlLabel.text = subChannel
+        self.joinChennlLabel.textColor = UIColor(named: "blue")
+        self.selectChannelLabel.isHidden = true
+        
+    }
 }
 
 extension NoteEditVC: UITextFieldDelegate {
