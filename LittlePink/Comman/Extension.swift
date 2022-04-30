@@ -29,6 +29,16 @@ extension UIViewController {
     // MARK:  - 顯示加載框或提示框
     
     // MARK:  加載框--手動隱藏
+    func showLoadHUD(_ title: String? = nil) {
+        let hud = MBProgressHUD.showAdded(to: view, animated: true)
+        hud.label.text = title
+    }
+    
+    func hideLoadHUD() {
+        DispatchQueue.main.async {
+            MBProgressHUD.hide(for: self.view, animated: true)
+        }
+    }
     
     // MARK:  提示框--自動隱藏
     func showTextHUD(_ title: String, subTitle:String? = nil){

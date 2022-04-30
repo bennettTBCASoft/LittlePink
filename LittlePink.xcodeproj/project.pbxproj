@@ -34,6 +34,7 @@
 		33D23E68281AE180004B97D6 /* ChannelVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D23E67281AE180004B97D6 /* ChannelVC.swift */; };
 		33D23E6A281AE211004B97D6 /* ChannelTableVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D23E69281AE211004B97D6 /* ChannelTableVC.swift */; };
 		33D23E6C281AF02D004B97D6 /* Protocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33D23E6B281AF02D004B97D6 /* Protocal.swift */; };
+		33E2DF22281D0B3C00B579A1 /* POIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E2DF21281D0B3C00B579A1 /* POIViewController.swift */; };
 		33E9E73B28196FA600C257EE /* NoteEditVC-Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E9E73A28196FA600C257EE /* NoteEditVC-Config.swift */; };
 		33E9E73D2819792400C257EE /* TextViewIAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33E9E73C2819792400C257EE /* TextViewIAView.swift */; };
 		33E9E73F2819793000C257EE /* TextViewIAView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E9E73E2819793000C257EE /* TextViewIAView.xib */; };
@@ -75,6 +76,7 @@
 		33D23E67281AE180004B97D6 /* ChannelVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelVC.swift; sourceTree = "<group>"; };
 		33D23E69281AE211004B97D6 /* ChannelTableVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelTableVC.swift; sourceTree = "<group>"; };
 		33D23E6B281AF02D004B97D6 /* Protocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocal.swift; sourceTree = "<group>"; };
+		33E2DF21281D0B3C00B579A1 /* POIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = POIViewController.swift; sourceTree = "<group>"; };
 		33E9E73A28196FA600C257EE /* NoteEditVC-Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NoteEditVC-Config.swift"; sourceTree = "<group>"; };
 		33E9E73C2819792400C257EE /* TextViewIAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextViewIAView.swift; sourceTree = "<group>"; };
 		33E9E73E2819793000C257EE /* TextViewIAView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextViewIAView.xib; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				33E9E73E2819793000C257EE /* TextViewIAView.xib */,
 				33D23E67281AE180004B97D6 /* ChannelVC.swift */,
 				33D23E69281AE211004B97D6 /* ChannelTableVC.swift */,
+				33E2DF21281D0B3C00B579A1 /* POIViewController.swift */,
 			);
 			path = NoteEdit;
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				33D23E68281AE180004B97D6 /* ChannelVC.swift in Sources */,
 				33E9E73B28196FA600C257EE /* NoteEditVC-Config.swift in Sources */,
 				337635B928087DCA00B38D62 /* SceneDelegate.swift in Sources */,
+				33E2DF22281D0B3C00B579A1 /* POIViewController.swift in Sources */,
 				3301539B280F0B1A00C6B3E8 /* Extension.swift in Sources */,
 				337635C128087DCA00B38D62 /* LittlePink.xcdatamodeld in Sources */,
 				3338506B280DC64E008C3450 /* TabbarC.swift in Sources */,
