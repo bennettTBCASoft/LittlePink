@@ -16,6 +16,7 @@ class NoteEditVC: UIViewController {
         UIImage(named: "1")!, UIImage(named: "2")!, UIImage(named: "3")!
     ]
     var videoURL: URL?
+//    var videoURL: URL? = Bundle.main.url(forResource: "TV", withExtension: "mp4")
     
     var photoCounts: Int {
         return photos.count
@@ -41,6 +42,7 @@ class NoteEditVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        print(NSHomeDirectory())
         config()
     }
 
@@ -58,7 +60,7 @@ class NoteEditVC: UIViewController {
         // 用戶輸入完字符後後進行判斷，若大於最大字符數，則擷取前面的文本（if裡面第一行）
         if titleTextField.unwrappedText.count > kMaxNoteTitleCount {
             titleTextField.text = String(titleTextField.unwrappedText.prefix(kMaxNoteTitleCount))
-            showTextHUD("最多只能輸入\(kMaxNoteTitleCount)個字哦~")
+            showTextHUD("標題最多只能輸入\(kMaxNoteTitleCount)個字哦")
             DispatchQueue.main.async {
                 let end = self.titleTextField.endOfDocument
                 self.titleTextField.selectedTextRange = self.titleTextField.textRange(from: end, to: end)
@@ -73,17 +75,53 @@ class NoteEditVC: UIViewController {
         titleCountLabel.isHidden = true
     }
     
-    // 待做（存草稿和發佈筆記之前須判斷當前用戶輸入的正文文本數量，看是否大於最大可輸入數量）
-    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // channelVC 不是 NoteEditVC下面的屬性，所以沒有強引用，不需要將PVDelegate標記為weak
         if let channelVC = segue.destination as? ChannelVC {
+            view.endEditing(true)
             channelVC.PVDelegate = self
         }
     }
+    // 待做（存草稿和發佈筆記之前須判斷當前用戶輸入的正文文本數量，看是否大於最大可輸入數量）
+    @IBAction func saveToDraft(_ sender: Any) {
+        
+        guard textViewIAView.currentTextCount <= kMaxNoteTextCount else {
+            showTextHUD("文本最多只能輸入\(kMaxNoteTitleCount)個字哦")
+            return
+        }
+        
+        
+        let draftNote = DraftNote(context: context)
+        draftNote.title = titleTextField.exactString
+        draftNote.text = textView.exactString
+        draftNote.channel = channel
+        draftNote.subChannel = subChannel
+        draftNote.updatedAt = Date()
+        draftNote.coverPhoto = photos[0].jpeg(.high)
+        if isVideo {
+            draftNote.video = try? Data(contentsOf: videoURL!)
+        }
+        var photos: [Data] = []
+        for photo in self.photos{
+            if let pngData = photo.pngData() {
+                photos.append(pngData)
+            }
+        }
+        draftNote.photos = try? JSONEncoder().encode(photos)
+        draftNote.isVideo = isVideo
+        appDelegate.saveContext()
+        
+    }
+    
+    @IBAction func postNote(_ sender: Any) {
+    }
+    
     
 }
+
+
+
 
 extension NoteEditVC: ChannelVCDelegate {
     func updateChannel(channel: String, subChannel: String) {
@@ -94,7 +132,6 @@ extension NoteEditVC: ChannelVCDelegate {
         self.joinChennlLabel.text = subChannel
         self.joinChennlLabel.textColor = UIColor(named: "blue")
         self.selectChannelLabel.isHidden = true
-        
     }
 }
 

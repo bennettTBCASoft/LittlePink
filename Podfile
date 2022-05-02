@@ -12,6 +12,7 @@ target 'LittlePink' do
   pod 'MBProgressHUD', '~> 1.2.0'
   pod 'SKPhotoBrowser'
   pod 'KMPlaceholderTextView'
+  pod 'DateToolsSwift'
   
 end
   
