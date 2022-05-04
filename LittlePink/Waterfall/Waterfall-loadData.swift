@@ -10,7 +10,21 @@ import CoreData
 
 extension WaterfallVC {
     func getDraftNoteData() {
-        let draftNotes = try! context.fetch(DraftNote.fetchRequest() as NSFetchRequest<DraftNote>)
+        let request = DraftNote.fetchRequest() as NSFetchRequest<DraftNote>
+        
+        //分頁（上拉加載）
+//        request.fetchOffset = 0
+//        request.fetchLimit = 20
+        
+        // 篩選
+//        request.predicate = NSPredicate(format: "title = %@", "iOS")
+        
+        // 排序
+        let sortDesriptor = NSSortDescriptor(key: "updatedAt", ascending: false)
+        request.sortDescriptors = [sortDesriptor]
+        
+        
+        let draftNotes = try! context.fetch(request)
         self.draftNote = draftNotes
     }
 }

@@ -187,20 +187,20 @@
                                     <rect key="frame" x="0.0" y="0.0" width="338" height="367"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Go5-ZB-giz">
-                                            <rect key="frame" x="0.0" y="0.0" width="338" height="279.5"/>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Go5-ZB-giz">
+                                            <rect key="frame" x="0.0" y="0.0" width="338" height="298"/>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="RWX-6O-gTa">
-                                            <rect key="frame" x="16" y="295.5" width="306" height="55.5"/>
+                                            <rect key="frame" x="16" y="306" width="314" height="53"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="今天天氣很好" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LDv-He-iuR">
-                                                    <rect key="frame" x="0.0" y="0.0" width="306" height="20.5"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="314" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="TUB-yV-TUV">
-                                                    <rect key="frame" x="0.0" y="24.5" width="306" height="31"/>
+                                                    <rect key="frame" x="0.0" y="22" width="314" height="31"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="08-08" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hlG-oP-Nnh">
                                                             <rect key="frame" x="0.0" y="0.0" width="39" height="31"/>
@@ -209,11 +209,12 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="glc-6i-f5u">
-                                                            <rect key="frame" x="262" y="0.0" width="44" height="31"/>
+                                                            <rect key="frame" x="277.5" y="0.0" width="36.5" height="31"/>
                                                             <color key="tintColor" systemColor="secondaryLabelColor"/>
-                                                            <inset key="contentEdgeInsets" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                             <state key="normal" title="Button"/>
-                                                            <buttonConfiguration key="configuration" style="plain" image="trash.fill" catalog="system"/>
+                                                            <buttonConfiguration key="configuration" style="plain">
+                                                                <imageReference key="image" image="trash.fill" catalog="system" symbolScale="small"/>
+                                                            </buttonConfiguration>
                                                         </button>
                                                     </subviews>
                                                 </stackView>
@@ -228,24 +229,25 @@
                                             </constraints>
                                         </imageView>
                                     </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
-                                        <constraint firstAttribute="trailing" secondItem="RWX-6O-gTa" secondAttribute="trailing" constant="16" id="0jT-mF-XF9"/>
+                                        <constraint firstAttribute="trailing" secondItem="RWX-6O-gTa" secondAttribute="trailing" constant="8" id="0jT-mF-XF9"/>
                                         <constraint firstItem="Go5-ZB-giz" firstAttribute="leading" secondItem="Viv-id-1Fi" secondAttribute="leading" id="3yX-qn-vRk"/>
                                         <constraint firstItem="BPw-l2-CPT" firstAttribute="top" secondItem="Viv-id-1Fi" secondAttribute="top" constant="16" id="KfL-7m-l7n"/>
                                         <constraint firstItem="RWX-6O-gTa" firstAttribute="leading" secondItem="Viv-id-1Fi" secondAttribute="leading" constant="16" id="Mmu-mp-RAW"/>
                                         <constraint firstItem="Go5-ZB-giz" firstAttribute="top" secondItem="Viv-id-1Fi" secondAttribute="top" id="Qy8-B0-gfo"/>
                                         <constraint firstAttribute="trailing" secondItem="Go5-ZB-giz" secondAttribute="trailing" id="W6x-zP-H7S"/>
-                                        <constraint firstItem="RWX-6O-gTa" firstAttribute="top" secondItem="Go5-ZB-giz" secondAttribute="bottom" constant="16" id="pDr-m7-wVL"/>
+                                        <constraint firstItem="RWX-6O-gTa" firstAttribute="top" secondItem="Go5-ZB-giz" secondAttribute="bottom" constant="8" id="pDr-m7-wVL"/>
                                         <constraint firstAttribute="trailing" secondItem="BPw-l2-CPT" secondAttribute="trailing" constant="16" id="tjg-Rk-EDR"/>
-                                        <constraint firstAttribute="bottom" secondItem="RWX-6O-gTa" secondAttribute="bottom" constant="16" id="zOJ-og-78D"/>
+                                        <constraint firstAttribute="bottom" secondItem="RWX-6O-gTa" secondAttribute="bottom" constant="8" id="zOJ-og-78D"/>
                                     </constraints>
+                                    <userDefinedRuntimeAttributes>
+                                        <userDefinedRuntimeAttribute type="number" keyPath="corner">
+                                            <real key="value" value="5"/>
+                                        </userDefinedRuntimeAttribute>
+                                    </userDefinedRuntimeAttributes>
                                 </collectionViewCellContentView>
                                 <size key="customSize" width="338" height="367"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="corner">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="dateLabel" destination="hlG-oP-Nnh" id="ZIA-Vy-lTe"/>
                                     <outlet property="deleteBtn" destination="glc-6i-f5u" id="IwG-Pc-XnP"/>

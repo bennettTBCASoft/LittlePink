@@ -52,14 +52,26 @@ class WaterfallVC: UICollectionViewController {
             return cell
         }
         
-        return UICollectionViewCell()
-
     }
 }
 // MARK: - CHTCollectionViewDelegateWaterfallLayout
 extension WaterfallVC: CHTCollectionViewDelegateWaterfallLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return UIImage(named: "\(indexPath.item + 1)")!.size
+        
+        
+        let cellW = (screenRect.width - (kWaterfallPadding * 3)) / 2
+        var cellH: CGFloat = 0
+        
+        if isMyDraft {
+            let draftNote = draftNote[indexPath.item]
+            let imageSize = UIImage(draftNote.coverPhoto)?.size ?? imagePH.size
+            let imageRatio = imageSize.height / imageSize.width
+            cellH = cellW * imageRatio + kDraftNoteCellBottomHeight
+        } else {
+            cellH = UIImage(named: "\(indexPath.item + 1)")!.size.height
+            
+        }
+        return CGSize(width: cellW, height: cellH)
     }
     
     

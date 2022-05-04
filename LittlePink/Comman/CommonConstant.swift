@@ -25,7 +25,7 @@ let draftNoteCellID = "DraftNoteCellID"
 
 // MARK: 資源相關
 let mainColor = UIColor(named: "main")!
-let imagePH = UIImage(named: "imagePH")
+let imagePH = UIImage(named: "imagePH")!
 
 // MARK: CoreData
 let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -34,6 +34,12 @@ let context = appDelegate.persistentContainer.viewContext
 // MARK: 業務邏輯相關
 // 瀑布流
 let kWaterfallPadding:CGFloat = 4
+
+// MARK: UI相關
+let screenRect = UIScreen.main.bounds
+
+// MARK: 瀑布流相關
+let kDraftNoteCellBottomHeight = 69.0 // DraftNoteCell裡的stackViewHeight + 上下高的邊距
 
 let kChannels = ["推薦", "旅行", "娛樂", "才藝", "美妝", "白富美", "美食", "萌寵"]
 let kAllSubChannels = [
