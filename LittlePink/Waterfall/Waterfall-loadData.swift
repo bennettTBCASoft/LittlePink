@@ -25,6 +25,6 @@ extension WaterfallVC {
         
         
         let draftNotes = try! context.fetch(request)
-        self.draftNote = draftNotes
+        self.draftNotes = draftNotes
     }
 }
