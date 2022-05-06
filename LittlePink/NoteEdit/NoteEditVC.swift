@@ -87,11 +87,7 @@ class NoteEditVC: UIViewController {
     // 待做（存草稿和發佈筆記之前須判斷當前用戶輸入的正文文本數量，看是否大於最大可輸入數量）
     @IBAction func saveToDraft(_ sender: Any) {
         
-        guard textViewIAView.currentTextCount <= kMaxNoteTextCount else {
-            showTextHUD("文本最多只能輸入\(kMaxNoteTitleCount)個字哦")
-            return
-        }
-        
+        validateNote()
         
         let draftNote = DraftNote(context: context)
         draftNote.title = titleTextField.exactString
@@ -116,6 +112,7 @@ class NoteEditVC: UIViewController {
     }
     
     @IBAction func postNote(_ sender: Any) {
+        validateNote()
     }
     
     
