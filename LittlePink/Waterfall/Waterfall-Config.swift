@@ -15,8 +15,8 @@ extension WaterfallVC {
         layout.minimumInteritemSpacing = kWaterfallPadding
         layout.sectionInset = UIEdgeInsets(top: 0, left: kWaterfallPadding, bottom: kWaterfallPadding, right: kWaterfallPadding)
         
-        if isMyDraft {
-            layout.sectionInset.top = 44
-        }
+//        if isMyDraft {
+//            layout.sectionInset.top = 44
+//        }
     }
 }

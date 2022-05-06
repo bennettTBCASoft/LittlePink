@@ -147,3 +147,33 @@ extension Bundle{
         fatalError("加載\(type)類型的view失敗")
     }
 }
+
+extension FileManager {
+    func save(data: Data?, dirName: String, fileName: String) -> URL?{
+        
+        guard let data = data else {
+            print("要寫入本地的 data 為 nil ")
+            return nil
+        }
+        
+        // temporaryDirectory == URL(fileURLWithPath: NSTemporaryDirectory())
+        let dirURL = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(dirName, isDirectory: true)
+        
+        if !fileExists(atPath: dirURL.path){
+            guard let _ = try? createDirectory(at: dirURL, withIntermediateDirectories: true) else {
+                print("資料夾創建失敗")
+                return nil
+            }
+        }
+        
+        let fileURL = dirURL.appendingPathComponent(fileName)
+        if !fileExists(atPath: fileURL.path){
+        
+            guard let _ = try? data.write(to: fileURL) else {
+                print("寫入檔案失敗")
+                return nil
+            }
+        }
+        return fileURL
+    }
+}

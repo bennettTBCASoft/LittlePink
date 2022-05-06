@@ -24,6 +24,8 @@ class WaterfallVC: UICollectionViewController {
         setConfig()
         
         getDraftNoteData()
+//        print("\(NSHomeDirectory())")
+//        FileManager.default.save(data: UIImage(named: "1")?.pngData(), dirName: "TestDir", fileName: "TestFile")
         
     }
 
@@ -59,9 +61,23 @@ class WaterfallVC: UICollectionViewController {
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let draftNote = draftNotes[indexPath.item]
         if let photosData = draftNote.photos, let photosDataArray = try? JSONDecoder().decode([Data].self, from: photosData) {
-            let image = photosDataArray.map { UIImage($0) ?? imagePH } 
+            let image = photosDataArray.map { UIImage($0) ?? imagePH }
+        
+            let videoURL = FileManager.default.save(data: draftNote.video, dirName: "video", fileName: "\(UUID().uuidString).mp4")
             
+            let vc = storyboard!.instantiateViewController(withIdentifier: kNoteEditVCID) as! NoteEditVC
+            
+            vc.draftNote = draftNote
+            vc.photos = image
+            vc.videoURL = videoURL
+            
+            navigationController?.pushViewController(vc, animated: true)
+        
+        } else {
+            showLoadHUD("加載失敗")
         }
+        
+       
         
     }
     
